@@ -1,0 +1,68 @@
+<svg viewBox="0 0 900 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .win   { fill: #14161f; stroke: #2c3040; stroke-width: 1.5; }
+      .bar   { fill: #1c1f2b; }
+      .dot   { fill: #3a3f52; }
+      .tabon { fill: #2b3350; }
+      .taboff{ fill: #1a1d29; }
+      .ttxt  { font-family: Arial, sans-serif; font-size: 13px; fill: #dfe2f0; }
+      .ttxt2 { font-family: Arial, sans-serif; font-size: 13px; fill: #7a80a0; }
+      .h1    { font-family: Arial, sans-serif; font-size: 18px; font-weight: bold; fill: #ffffff; }
+      .p     { font-family: Arial, sans-serif; font-size: 12px; fill: #9aa0c3; }
+      .box   { fill: #1c1f2b; stroke: #333853; stroke-width: 1.5; stroke-dasharray: 5,4; }
+      .btn   { fill: #e74c3c; }
+      .btxt  { font-family: Arial, sans-serif; font-size: 13px; font-weight: bold; fill: #ffffff; }
+    </style>
+  </defs>
+
+  <rect width="900" height="600" fill="#0b0c12"/>
+
+  <!-- browser chrome -->
+  <rect x="30" y="30" width="840" height="540" rx="10" class="win"/>
+  <rect x="30" y="30" width="840" height="34" rx="10" class="bar"/>
+  <circle cx="52" cy="47" r="5" class="dot"/>
+  <circle cx="70" cy="47" r="5" class="dot"/>
+  <circle cx="88" cy="47" r="5" class="dot"/>
+
+  <!-- app header -->
+  <text x="60" y="100" class="h1">🛣️ AI-Based Pothole Detection &amp; Road Condition Classification</text>
+  <text x="60" y="122" class="p">Upload a road image to detect potholes, estimate severity, geotag the location, and log it.</text>
+
+  <!-- tabs -->
+  <rect x="60" y="145" width="150" height="34" rx="6" class="tabon"/>
+  <text x="135" y="167" text-anchor="middle" class="ttxt">1️⃣ Detection</text>
+
+  <rect x="216" y="145" width="170" height="34" rx="6" class="taboff"/>
+  <text x="301" y="167" text-anchor="middle" class="ttxt2">2️⃣ Interactive Map</text>
+
+  <rect x="392" y="145" width="160" height="34" rx="6" class="taboff"/>
+  <text x="472" y="167" text-anchor="middle" class="ttxt2">3️⃣ Data Export</text>
+
+  <!-- content: image placeholders -->
+  <rect x="60" y="200" width="220" height="160" rx="6" class="box"/>
+  <text x="170" y="285" text-anchor="middle" class="p">Upload Road Image</text>
+
+  <rect x="300" y="200" width="220" height="160" rx="6" class="box"/>
+  <text x="410" y="285" text-anchor="middle" class="p">Original</text>
+
+  <rect x="540" y="200" width="260" height="160" rx="6" class="box"/>
+  <text x="670" y="275" text-anchor="middle" class="p">Detected Potholes</text>
+  <rect x="600" y="290" width="90" height="45" rx="2" fill="none" stroke="#e74c3c" stroke-width="2"/>
+  <text x="605" y="286" font-size="10" fill="#e74c3c">High Risk</text>
+
+  <!-- report box -->
+  <rect x="60" y="380" width="740" height="90" rx="6" class="box"/>
+  <text x="76" y="402" class="p">🕳️ Potholes detected: 2</text>
+  <text x="76" y="420" class="p">🚦 Overall Road Severity: High Risk</text>
+  <text x="76" y="438" class="p">📍 Location: MG Road, Bengaluru, Karnataka</text>
+  <text x="76" y="456" class="p">🌐 Coordinates: 12.9716, 77.5946 (GPS source: Mock)</text>
+
+  <!-- analyze button -->
+  <rect x="60" y="490" width="220" height="44" rx="8" class="btn"/>
+  <text x="170" y="517" text-anchor="middle" class="btxt">🔍 Analyze Road Image</text>
+
+  <text x="450" y="565" text-anchor="middle" class="p" font-style="italic">
+    ⚠ Conceptual preview — replace this with a real screenshot or GIF of your running app
+  </text>
+</svg>

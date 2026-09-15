@@ -1,0 +1,42 @@
+<svg viewBox="0 0 900 190" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="scale" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#2ecc71"/>
+      <stop offset="30%" stop-color="#2ecc71"/>
+      <stop offset="55%" stop-color="#f39c12"/>
+      <stop offset="100%" stop-color="#e74c3c"/>
+    </linearGradient>
+    <style>
+      .lbl  { font-family: Arial, sans-serif; font-size: 14px; fill: #e6e8f0; }
+      .val  { font-family: Arial, sans-serif; font-size: 12px; fill: #9aa0c3; }
+      .cap  { font-family: Arial, sans-serif; font-size: 13px; fill: #9aa0c3; }
+    </style>
+  </defs>
+  <rect width="900" height="190" fill="none"/>
+
+  <text x="450" y="28" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#ffffff">
+    Severity = bounding-box area ÷ image area
+  </text>
+
+  <!-- the bar -->
+  <rect x="60" y="55" width="780" height="34" rx="6" fill="url(#scale)"/>
+
+  <!-- threshold markers -->
+  <line x1="294" y1="45" x2="294" y2="99" stroke="#ffffff" stroke-width="2" stroke-dasharray="4,3"/>
+  <line x1="489" y1="45" x2="489" y2="99" stroke="#ffffff" stroke-width="2" stroke-dasharray="4,3"/>
+
+  <text x="294" y="42" text-anchor="middle" class="val">0.02</text>
+  <text x="489" y="42" text-anchor="middle" class="val">0.06</text>
+
+  <!-- labels under bar -->
+  <text x="170" y="120" text-anchor="middle" class="lbl">🟢 Low</text>
+  <text x="390" y="120" text-anchor="middle" class="lbl">🟠 Medium</text>
+  <text x="670" y="120" text-anchor="middle" class="lbl">🔴 High Risk</text>
+
+  <text x="450" y="155" text-anchor="middle" class="cap">
+    Bigger apparent pothole (closer to camera / larger crack) → higher risk score
+  </text>
+  <text x="450" y="175" text-anchor="middle" class="cap">
+    Thresholds are tunable per camera height / field of view — see SEVERITY_THRESHOLDS in the config cell
+  </text>
+</svg>

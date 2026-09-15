@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environment
+venv/
+.venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# VS Code
+.vscode/
+
+# Generated files
+pothole_detection_report.csv
+_tmp_upload.jpg
+
+# Python cache
+*.log
+
+# OS
+.DS_Store
+Thumbs.db

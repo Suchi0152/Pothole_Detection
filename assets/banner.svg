@@ -1,0 +1,75 @@
+<svg viewBox="0 0 1200 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0f1220"/>
+      <stop offset="100%" stop-color="#1b2340"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2b2f3a"/>
+      <stop offset="100%" stop-color="#14161c"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#2ecc71"/>
+      <stop offset="50%" stop-color="#f39c12"/>
+      <stop offset="100%" stop-color="#e74c3c"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="300" fill="url(#sky)"/>
+
+  <!-- distant skyline dots -->
+  <g fill="#2a2f4a">
+    <circle cx="90" cy="60" r="1.6"/><circle cx="150" cy="45" r="1.2"/><circle cx="230" cy="70" r="1.8"/>
+    <circle cx="980" cy="50" r="1.6"/><circle cx="1050" cy="65" r="1.2"/><circle cx="1120" cy="40" r="1.8"/>
+  </g>
+
+  <!-- road, perspective trapezoid -->
+  <polygon points="430,300 770,300 660,150 540,150" fill="url(#road)"/>
+  <!-- road edge lines -->
+  <polygon points="430,300 540,150 552,150 448,300" fill="#3a3f4d"/>
+  <polygon points="770,300 660,150 648,150 752,300" fill="#3a3f4d"/>
+  <!-- dashed center line -->
+  <g fill="#f2c14e">
+    <rect x="595" y="270" width="10" height="22" rx="2"/>
+    <rect x="591" y="228" width="8" height="18" rx="2"/>
+    <rect x="587" y="192" width="6" height="14" rx="2"/>
+    <rect x="584" y="164" width="4" height="10" rx="2"/>
+  </g>
+
+  <!-- pothole with detection box -->
+  <ellipse cx="500" cy="255" rx="30" ry="12" fill="#0b0c10"/>
+  <ellipse cx="500" cy="255" rx="30" ry="12" fill="none" stroke="#08090b" stroke-width="1"/>
+  <rect x="462" y="234" width="76" height="42" rx="3" fill="none" stroke="#e74c3c" stroke-width="2.5"/>
+  <text x="464" y="228" font-family="Arial, sans-serif" font-size="13" fill="#e74c3c" font-weight="bold">High Risk 92%</text>
+
+  <!-- title -->
+  <text x="600" y="60" text-anchor="middle" font-family="Arial, sans-serif" font-size="34" font-weight="bold" fill="#ffffff">
+    🛣️ AI-Based Pothole Detection
+  </text>
+  <text x="600" y="92" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#c7cbe0">
+    &amp; Road Condition Classification
+  </text>
+
+  <!-- accent rule -->
+  <rect x="450" y="108" width="300" height="4" rx="2" fill="url(#accent)"/>
+
+  <!-- tagline -->
+  <text x="600" y="140" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#9aa0c3">
+    Detect · Classify · Geotag · Map · Report — end-to-end in one Colab notebook
+  </text>
+
+  <!-- badge pills -->
+  <g font-family="Arial, sans-serif" font-size="13" fill="#ffffff">
+    <rect x="360" y="255" width="90" height="26" rx="13" fill="#2b3350"/>
+    <text x="405" y="272" text-anchor="middle">YOLOv8</text>
+
+    <rect x="460" y="255" width="80" height="26" rx="13" fill="#2b3350"/>
+    <text x="500" y="272" text-anchor="middle">Gradio</text>
+
+    <rect x="750" y="255" width="80" height="26" rx="13" fill="#2b3350"/>
+    <text x="790" y="272" text-anchor="middle">Folium</text>
+
+    <rect x="660" y="255" width="80" height="26" rx="13" fill="#2b3350"/>
+    <text x="700" y="272" text-anchor="middle">Geopy</text>
+  </g>
+</svg>

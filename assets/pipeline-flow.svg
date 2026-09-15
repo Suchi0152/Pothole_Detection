@@ -1,0 +1,75 @@
+<svg viewBox="0 0 1200 240" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .card { fill: #1c1f2b; stroke: #333853; stroke-width: 1.5; }
+      .title { font-family: Arial, sans-serif; font-size: 16px; font-weight: bold; fill: #ffffff; }
+      .sub   { font-family: Arial, sans-serif; font-size: 11px; fill: #9aa0c3; }
+      .arrow { stroke: #565d80; stroke-width: 2.5; fill: none; marker-end: url(#arrowhead); }
+    </style>
+    <marker id="arrowhead" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#565d80"/>
+    </marker>
+  </defs>
+
+  <rect width="1200" height="240" fill="none"/>
+
+  <!-- Step template: x offsets -->
+  <!-- 1 Upload -->
+  <g>
+    <rect class="card" x="20" y="70" width="170" height="100" rx="12"/>
+    <circle cx="105" cy="105" r="20" fill="#3498db"/>
+    <text x="105" y="112" text-anchor="middle" font-size="18" fill="#fff">⬆️</text>
+    <text class="title" x="105" y="145" text-anchor="middle">Upload</text>
+    <text class="sub" x="105" y="162" text-anchor="middle">Road photo via Gradio</text>
+  </g>
+  <path class="arrow" d="M190,120 L212,120"/>
+
+  <!-- 2 Detect -->
+  <g>
+    <rect class="card" x="212" y="70" width="170" height="100" rx="12"/>
+    <circle cx="297" cy="105" r="20" fill="#e74c3c"/>
+    <text x="297" y="112" text-anchor="middle" font-size="18" fill="#fff">🎯</text>
+    <text class="title" x="297" y="145" text-anchor="middle">Detect</text>
+    <text class="sub" x="297" y="162" text-anchor="middle">YOLOv8 or CV fallback</text>
+  </g>
+  <path class="arrow" d="M382,120 L404,120"/>
+
+  <!-- 3 Rate -->
+  <g>
+    <rect class="card" x="404" y="70" width="170" height="100" rx="12"/>
+    <circle cx="489" cy="105" r="20" fill="#f39c12"/>
+    <text x="489" y="112" text-anchor="middle" font-size="18" fill="#fff">🚦</text>
+    <text class="title" x="489" y="145" text-anchor="middle">Rate</text>
+    <text class="sub" x="489" y="162" text-anchor="middle">Low / Medium / High</text>
+  </g>
+  <path class="arrow" d="M574,120 L596,120"/>
+
+  <!-- 4 Locate -->
+  <g>
+    <rect class="card" x="596" y="70" width="170" height="100" rx="12"/>
+    <circle cx="681" cy="105" r="20" fill="#2ecc71"/>
+    <text x="681" y="112" text-anchor="middle" font-size="18" fill="#fff">📍</text>
+    <text class="title" x="681" y="145" text-anchor="middle">Locate</text>
+    <text class="sub" x="681" y="162" text-anchor="middle">EXIF GPS or mock</text>
+  </g>
+  <path class="arrow" d="M766,120 L788,120"/>
+
+  <!-- 5 Map -->
+  <g>
+    <rect class="card" x="788" y="70" width="170" height="100" rx="12"/>
+    <circle cx="873" cy="105" r="20" fill="#9b59b6"/>
+    <text x="873" y="112" text-anchor="middle" font-size="18" fill="#fff">🗺️</text>
+    <text class="title" x="873" y="145" text-anchor="middle">Map</text>
+    <text class="sub" x="873" y="162" text-anchor="middle">Folium pin + popup</text>
+  </g>
+  <path class="arrow" d="M958,120 L980,120"/>
+
+  <!-- 6 Log -->
+  <g>
+    <rect class="card" x="980" y="70" width="200" height="100" rx="12"/>
+    <circle cx="1065" cy="105" r="20" fill="#1abc9c"/>
+    <text x="1065" y="112" text-anchor="middle" font-size="18" fill="#fff">📊</text>
+    <text class="title" x="1075" y="145" text-anchor="middle">Log</text>
+    <text class="sub" x="1080" y="162" text-anchor="middle">Table row + CSV export</text>
+  </g>
+</svg>
