@@ -163,5 +163,5 @@ This project is licensed under the MIT License — see [LICENSE](LICENSE) for de
 ---
 
 <div align="center">
-<sub>Built by <b>Mohammed</b>
+<sub>Built by <b>Kanigelpula Suchitra</b>
 </div>
